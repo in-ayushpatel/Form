@@ -63,27 +63,15 @@ myimage.onchange = function(event){
 
 
 page3_next.onclick =function(){
-
-    var inp3 = document.getElementsByClassName("c3");
-    var flag3 = 1;
-    for (let i = 0; i < 3 ; i++) {
-        if(inp3[i].value==''){
-            alert('fill all blanks')
-            flag3=0;
-            break;
-        }
-    }
-
-    if(flag3!=1){
-        var password = pass.value;
-        var re_pass = document.getElementById("re-password");
-        var re_password = re_pass.value;
-        if(password!=re_password){
-            alert('password does not match');
-        }else{
-            alert('Confirm')
-            container_3.style.display = "none";
-        }
+    var pass = document.getElementById("password");
+    var password = pass.value;
+    var re_pass = document.getElementById("re-password");
+    var re_password = re_pass.value;
+    if(password!=re_password){
+        alert('password does not match');
+    }else{
+        alert('Confirm')
+        container_3.style.display = "none";
     }
 }
 
