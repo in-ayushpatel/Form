@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form</title>
+</head>
+<body>
+    <div id="container-1">
+        <h1 id="per-info">Personal Information</h1>
+        <br>
+
+        <form action="">
+            <label for="name">Name</label>
+            <input class="c1" type="text" name="name">
+            <br> <br>
+            <label for="gender">Gemder</label>
+            <select name="gender">
+				<option value="male">male</option>
+				<option value="female">female</option>
+				<option value="chakka">other</option>
+            </select>
+            <br> <br>
+            <label for="phone">Phone number</label>
+            <input class="c1" type="text" name="phone">
+            <br> <br>
+            <label for="birthday">birthday</label>
+            <input class="c1" type="date" name="birthday">
+            <br> <br>
+            <label for="city">City</label>
+            <input class="c1" type="text" name="city">
+            <br> <br>
+            <label for="country">Country</label>
+            <input class="c1" type="text" name="country">
+            <br>
+            <br>
+
+        </form>
+
+        <div class="but p1-but">
+            <button id="page1-next">Next</button>
+        </div>
+
+        <br><br> <br> <br>
+
+    </div>
+
+
+    <div id="container-2">
+        <label for="myfile">Select picture:</label>
+        <input type="file" id="myimage" accept="image/*" name="myimage">
+        <br> <br>
+        <div id="preview">
+            <img src="" id="img-preview" alt="">
+        </div>
+        <br>
+        <div class="but">
+            <button id="page2-prev">Previous</button>
+            <button id="page2-next">Next</button>
+        </div>
+
+        <br> <br>
+
+    </div>
+
+    <div id="container-3">
+        <form action="">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+            <br> <br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <br><br>
+
+            <label for="re-password">Re-type Password</label>
+            <input type="password" name="password" id="re-password">
+            <br><br>
+        </form>
+
+        <div class="but">
+            <button id="page3-prev">Previous</button>
+            <button id="page3-next">Submit</button>
+
+        </div>
+
+        <br><br>
+
+    </div>
+
+    <div class="box">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
